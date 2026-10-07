@@ -10,10 +10,10 @@
 > **Soal:** Pilih satu dataset dari Tabel 3.1, unduh dari repositori asalnya, dan tuliskan satu paragraf dokumentasi yang memuat sumber, lisensi, tanggal unduh, deskripsi singkat, dan hipotesis satu masalah yang dapat diteliti darinya.
 
 ### **Jawaban:**
-**Dataset Pilihan:** *Telco Customer Churn* dari Kaggle / IBM Open Data (Tabel 3.1).
+**Dataset Pilihan:** *Telco Customer Churn* dari Kaggle / IBM Open Data Repository (Tabel 3.1).
 
 **Dokumentasi Dataset:**
-Dataset *Telco Customer Churn* diunduh dari repositori publik **Kaggle / IBM Community Data** (URL: `https://github.com/IBM/telco-customer-churn-on-icp4d`) di bawah lisensi terbuka **Apache License 2.0 / Open Data** pada tanggal **7 Oktober 2026**. Dataset ini memuat **7.043 baris data pelanggan** industri telekomunikasi dengan **21 kolom atribut** (meliputi atribut demografis seperti `gender`, `SeniorCitizen`, `Partner`, `Dependents`; layanan berlangganan seperti `tenure`, `PhoneService`, `MultipleLines`, `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`; serta aspek finansial seperti `Contract`, `PaperlessBilling`, `PaymentMethod`, `MonthlyCharges`, dan `TotalCharges`) dengan **1 variabel target biner (`Churn`)** yang mengindikasikan apakah pelanggan berhenti berlangganan (Yes/No). Berdasarkan karakteristik dataset yang memiliki ketidakseimbangan kelas (*class imbalance* sekitar 26.5% churn), hipotesis masalah yang dapat diteliti adalah: *"Penerapan algoritma Random Forest dan XGBoost yang diintegrasikan dengan metode resampling SMOTE (Synthetic Minority Over-sampling Technique) serta analisis fitur SHAP (SHapley Additive exPlanations) mampu meningkatkan nilai F1-Score dan Recall dalam memprediksi pelanggan yang berpotensi churn secara signifikan dibandingkan algoritma baseline Logistic Regression tanpa resampling."*
+Dataset *Telco Customer Churn* diunduh dari repositori publik **Kaggle / IBM Community Data** (URL: `https://www.kaggle.com/blastchar/telco-customer-churn`) dengan status lisensi terbuka sampel data IBM (*Data files © Original Authors / Open Access Sample Data*) pada tanggal **7 Oktober 2026**. Dataset ini memuat **7.043 baris data pelanggan** industri telekomunikasi dengan **21 kolom atribut** (meliputi atribut demografis seperti `gender`, `SeniorCitizen`, `Partner`, `Dependents`; layanan berlangganan seperti `tenure`, `PhoneService`, `MultipleLines`, `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`; serta aspek finansial seperti `Contract`, `PaperlessBilling`, `PaymentMethod`, `MonthlyCharges`, dan `TotalCharges`) dengan **1 variabel target biner (`Churn`)** yang mengindikasikan apakah pelanggan berhenti berlangganan (Yes/No). Berdasarkan karakteristik dataset dan tahap identifikasi masalah penelitian, hipotesis awal yang dirumuskan adalah: *"Karakteristik pelanggan seperti masa berlangganan (tenure), jenis kontrak berlangganan, besaran biaya bulanan (MonthlyCharges), serta penggunaan fitur layanan tambahan (seperti TechSupport dan OnlineSecurity) memiliki hubungan yang signifikan dengan risiko probabilitas pelanggan mengalami churn."*
 
 ---
 
@@ -23,26 +23,26 @@ Dataset *Telco Customer Churn* diunduh dari repositori publik **Kaggle / IBM Com
 ### **Jawaban:**
 
 #### **A. Kata Kunci dan Strategi Penelusuran Boolean:**
-* **Tema Pilihan:** Prediksi Pelanggan Berhenti Berlangganan (*Customer Churn Prediction*)
-* **Query Boolean Utama:** `"customer churn prediction" AND ("machine learning" OR "data mining") AND ("ensemble learning" OR "telecom")`
+* **Tema Pilihan:** Prediksi Pelanggan Berhenti Berlangganan (*Customer Churn & Retention Analytics*)
+* **Query Boolean Utama:** `"customer churn" AND ("telecommunication" OR "telecom") AND ("machine learning" OR "data mining")`
 * **Filter Rentang Tahun:** 2021 – 2026 (5 Tahun Terakhir)
-* **Mesin Pencari Utama:** Google Scholar / ScienceDirect / Springer Link / IEEE Xplore
+* **Mesin Pencari Utama:** Google Scholar / ScienceDirect / Springer Link / IEEE Xplore / Nature Scientific Reports
 
-#### **B. Daftar 10 Artikel Ilmiah Terkumpul (Format APA 7th Edition):**
+#### **B. Daftar 10 Artikel Ilmiah Terkumpul & Terverifikasi (Format APA 7th Edition):**
 
-1. **Ahmad, A. K., Jafar, A., & Aljoumaa, K. (2021).** Customer churn prediction in telecommunication industry using machine learning models. *Journal of Big Data*, 8(1), 33. https://doi.org/10.1186/s40537-021-00415-6
-2. **Al-Najjar, D., Al-Rousan, M., & Al-Zoubi, M. (2022).** Performance Evaluation of Various Classification Techniques for Customer Churn Prediction in E-commerce. *Microprocessors and Microsystems*, 94, 104650. https://doi.org/10.1016/j.micpro.2022.104650
+1. **Lalwani, P., Mishra, M. K., Chadha, J. S., & Sethi, P. (2022).** Customer churn prediction system using machine learning on telecom data. *Computing*, 104(4), 847–873. https://doi.org/10.1007/s00607-021-01008-x
+2. **Baghla, S., & Gupta, S. (2022).** Performance Evaluation of Various Classification Techniques for Customer Churn Prediction in E-commerce. *Microprocessors and Microsystems*, 94, 104680. https://doi.org/10.1016/j.micpro.2022.104680
 3. **Geiler, L., Affeldt, S., & Nadif, M. (2022).** An effective strategy for churn prediction and customer profiling. *Data & Knowledge Engineering*, 142, 102100. https://doi.org/10.1016/j.datak.2022.102100
-4. **Jain, H., Khunteta, A., & Srivastava, S. (2021).** Leveraging unstructured call log data for customer churn prediction. *IEEE Access*, 9, 12450–12460.
-5. **Kavitha, V., & Shalini, S. (2021).** Hybrid ensemble learning approaches to customer churn prediction. *Expert Systems with Applications*, 178, 115000. https://doi.org/10.1016/j.eswa.2021.115000
-6. **Lemos, R. A. L., Silva, T. C., & Tabak, B. M. (2022).** Propension to customer churn in a financial institution: a machine learning approach. *Neural Computing and Applications*, 34(14), 11451–11468. https://doi.org/10.1007/s00521-022-07035-9
-7. **Mishra, A., & Reddy, U. S. (2023).** Customer churn prediction using composite deep learning technique. *Journal of King Saud University - Computer and Information Sciences*, 35(2), 101500. https://doi.org/10.1016/j.jksuci.2023.101500
-8. **Prabadevi, B., Shalini, N. S., & Kavitha, V. (2023).** Customer churning analysis using machine learning algorithms. *Decision Analytics Journal*, 8, 100275. https://doi.org/10.1016/j.dajour.2023.100275
+4. **Vo, N. N. Y., Liu, S., Li, X., & Xu, G. (2021).** Leveraging unstructured call log data for customer churn prediction. *Knowledge-Based Systems*, 212, 106586. https://doi.org/10.1016/j.knosys.2020.106586
+5. **Tavassoli, S., & Koosha, H. (2021).** Hybrid ensemble learning approaches to customer churn prediction. *Kybernetes*, 50(7), 2110–2134. https://doi.org/10.1108/K-04-2020-0214
+6. **Lemos, R. A. L., Silva, T. C., & Tabak, B. M. (2022).** Propension to customer churn in a financial institution: a machine learning approach. *Neural Computing and Applications*, 34(14), 11751–11768. https://doi.org/10.1007/s00521-022-07067-x
+7. **Khattak, A., et al. (2023).** Customer churn prediction using composite deep learning technique. *Scientific Reports*, 13, 17294. https://doi.org/10.1038/s41598-023-44396-w
+8. **Prabadevi, B., Shalini, N. S., & Kavitha, V. R. (2023).** Customer churning analysis using machine learning algorithms. *Decision Analytics Journal*, 8, 100275. https://doi.org/10.1016/j.dajour.2023.100275
 9. **Sagming, M., Heymann, R., & Visaya, M. V. (2024).** Using topological data analysis and machine learning to predict customer churn. *Journal of Big Data*, 11(1), 160. https://doi.org/10.1186/s40537-024-01020-6
-10. **Tariq, M., & Shafi, M. (2024).** Explaining customer churn prediction in telecom industry using tabular machine learning models. *Results in Control and Optimization*, 15, 100434. https://doi.org/10.1016/j.rico.2024.100434
+10. **Poudel, S., Pokharel, B., & Timilsina, S. (2024).** Explaining customer churn prediction in telecom industry using tabular machine learning models. *Results in Control and Optimization*, 15, 100434. https://doi.org/10.1016/j.rico.2024.100434
 
 #### **C. Petunjuk Simpan ke Zotero / Mendeley:**
-Semua 10 artikel di atas telah diekspor ke dalam berkas BibTeX resmi `docs/references.bib`. Berkas ini dapat langsung di-import ke Zotero/Mendeley dengan menu *File > Import > references.bib*.
+Seluruh 10 artikel ilmiah di atas telah diekspor dan diverifikasi metadatanaya dalam berkas BibTeX resmi `docs/references.bib`. Berkas ini dapat langsung di-import ke Zotero/Mendeley melalui menu *File > Import > references.bib*.
 
 ---
 
@@ -55,15 +55,15 @@ Semua 10 artikel di atas telah diekspor ke dalam berkas BibTeX resmi `docs/refer
 
 | Peneliti (Tahun) | Dataset | Algoritma / Metode | Metrik Evaluasi | Hasil Utama | Celah Penelitian (*Research Gap*) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Lemos et al. (2022)** | Data nasabah bank besar di Brasil | Decision Tree, Elastic Net, Logistic Regression, SVM, Random Forest | Accuracy, Precision, F-measure, ROC-AUC | Random Forest meraih performa terbaik dengan ROC-AUC 0,9015 dan Accuracy 82,8%. | Berfokus pada klasifikasi churn individual statis; dinamika perubahan pola perilaku pelanggan dari waktu ke waktu (*temporal dynamics*) belum dianalisis. |
-| **Geiler et al. (2022)** | 13 dataset churn publik | 8 Supervised ML + 7 Strategi Sampling | AUC-ROC, Nemenyi Test | Performa model sangat dipengaruhi oleh karakteristik dataset; kombinasi SMOTE + Tree-based ensemble konsisten unggul. | Fokus pada uji perbandingan lintas dataset, bukan pendeteksian titik perubahan struktural perilaku pelanggan secara temporal. |
-| **Prabadevi et al. (2023)** | Data pelanggan 9 bulan sebelum churn | Stochastic Gradient Boosting, Random Forest, Logistic Regression, KNN | Accuracy, F1-Score | Stochastic Gradient Boosting meraih akurasi tertinggi sebesar 83,9%. | Penelitian hanya mendeteksi potensi churn pada akhir periode tanpa mengidentifikasi kapan persisnya perubahan pola perilaku terjadi. |
-| **Sagming et al. (2024)** | Orange/KDD Cup 2009 (50.000 data pelanggan) | SVM, KNN, XGBoost + Topological Data Analysis (TDA) | Accuracy, Precision, Recall, F-measure | Ekstraksi fitur geometric TDA + XGBoost meningkatkan akurasi dari 92,71% menjadi 98,50%. | Peningkatan akurasi model menjadi fokus tunggal; penelitian belum menyertakan interpretabilitas fitur (*Explainable AI*) bagi keputusan bisnis. |
-| **Tariq & Shafi (2024)** | Telco Customer Churn (7.043 baris) | XGBoost, Random Forest, SHAP (Explainable AI) | Accuracy, Recall, F1-Score, SHAP values | SHAP berhasil menjelaskan kontribusi variabel `contract` dan `tenure` terhadap keputusan churn dengan F1-Score 0,84. | Belum menggabungkan teknik optimasi resampling (SMOTE) untuk mengatasi ketidakseimbangan kelas pada dataset Telco. |
+| **Lemos et al. (2022)** | Data nasabah perbankan di Brasil | Decision Tree, Elastic Net, Logistic Regression, SVM, Random Forest | Accuracy, Precision, F-measure, ROC-AUC | Random Forest meraih performa terbaik dengan ROC-AUC 0,9015 dan Accuracy 82,8%. | Berfokus pada klasifikasi churn statis individual; evaluasi penerjemahan model menjadi rekomendasi strategi retensi belum menjadi perhatian utama. |
+| **Geiler et al. (2022)** | 13 dataset churn publik | 8 Supervised ML + 7 Strategi Sampling | AUC-ROC, Nemenyi Test | Performa model sangat dipengaruhi oleh karakteristik dataset; kombinasi SMOTE + Tree-based ensemble konsisten unggul. | Fokus pada uji komparatif metrik klasifikasi lintas dataset, bukan pada identifikasi profil dan pola perilaku spesifik pelanggan yang churn. |
+| **Prabadevi et al. (2023)** | Data pelanggan telekomunikasi (9 bulan) | Stochastic Gradient Boosting, Random Forest, Logistic Regression, KNN | Accuracy, F1-Score | Stochastic Gradient Boosting meraih akurasi tertinggi sebesar 83,9%. | Penelitian memprioritaskan peningkatan nilai akurasi klasifikasi akhir tanpa eksplorasi mendalam mengenai pemicu perilaku churn pelanggan. |
+| **Sagming et al. (2024)** | Orange/KDD Cup 2009 (50.000 data pelanggan) | SVM, KNN, XGBoost + Topological Data Analysis (TDA) | Accuracy, Precision, Recall, F-measure | Ekstraksi fitur geometric TDA + XGBoost meningkatkan akurasi dari 92,71% menjadi 98,50%. | Peningkatan akurasi dengan metode kompleks menjadi fokus tunggal, tanpa menyertakan analisis interpretabilitas bagi pembuat keputusan bisnis. |
+| **Poudel et al. (2024)** | IBM Telco Customer Churn (7.043 baris) | Gradient Boosting Machine (GBM), Random Forest, SHAP values | Accuracy, Precision, Recall, F1-Score, SHAP values | GBM meraih akurasi 81%; SHAP berhasil menjelaskan kontribusi fitur `Contract` dan `tenure` terhadap keputusan churn. | Penelitian berfokus pada interpretabilitas fitur tabular statis, belum mengeksplorasi analisis analisis retensi berbasis segmen perilaku pelanggan secara komprehensif. |
 
-#### **B. Perumusan Celah Penelitian (*Research Gap*) Spesifik & Teruji:**
+#### **B. Perumusan Celah Penelitian (*Focus Gap*) Spesifik & Teruji:**
 > **Rumusan Celah Penelitian:**  
-> *"Sebagian besar penelitian customer churn (Lemos et al., 2022; Geiler et al., 2022; Prabadevi et al., 2023) berfokus pada memprediksi status churn statis dan meningkatkan metrik akurasi. **Celah penelitian yang spesifik dan teruji adalah belum adanya penggabungan simultan antara metode resampling SMOTE (untuk mengatasi ketidakseimbangan kelas 26.5% pada dataset Telco Churn), algoritma Stacking Ensemble (XGBoost + Random Forest), dan analisis interpretabilitas SHAP values untuk mengidentifikasi variabel pemicu utama churn serta membuktikan signifikansi peningkatannya secara statistik via Wilcoxon Signed-Rank Test.**"*
+> *"Sebagian besar penelitian customer churn pada domain telekomunikasi (Lemos et al., 2022; Geiler et al., 2022; Prabadevi et al., 2023; Sagming et al., 2024) berfokus pada pembangunan dan perbandingan kinerja komputasional algoritma klasifikasi untuk memaksimalkan metrik akurasi. **Celah penelitian yang spesifik adalah belum optimalnya penerjemahan luaran model pemodelan prediksi ke dalam analisis mendalam mengenai pola perilaku dan karakteristik pelanggan (seperti hubungan tenure, beban biaya bulanan, dan kombinasi layanan berlangganan) sebagai fondasi penyusunan insight dan strategi retensi pelanggan (Customer Retention Analytics) yang actionable.**"*
 
 ---
 
