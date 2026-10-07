@@ -13,7 +13,7 @@
 **Dataset Pilihan:** *Telco Customer Churn* dari IBM GitHub Repository (Tabel 3.1).
 
 **Dokumentasi Dataset:**
-Dataset *Telco Customer Churn* yang digunakan dalam penelitian ini diperoleh dari repositori resmi **IBM GitHub** (`IBM/telco-customer-churn-on-icp4d`). Repositori resmi IBM memuat lisensi **Apache Software License 2.0** (ditujukan untuk struktur repositori/code pattern, sementara lisensi berkas data sampel tidak dinyatakan secara terpisah dalam repositori) dan diunduh pada tanggal **7 Oktober 2026**. Dataset ini memuat **7.043 baris data pelanggan** industri telekomunikasi dengan **21 kolom atribut** (meliputi atribut demografis seperti `gender`, `SeniorCitizen`, `Partner`, `Dependents`; layanan berlangganan seperti `tenure`, `PhoneService`, `MultipleLines`, `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`; serta aspek finansial seperti `Contract`, `PaperlessBilling`, `PaymentMethod`, `MonthlyCharges`, dan `TotalCharges`) dengan **1 variabel target biner (`Churn`)** yang mengindikasikan apakah pelanggan berhenti berlangganan (Yes/No). Berdasarkan karakteristik dataset dan tahap identifikasi masalah penelitian, hipotesis awal yang dirumuskan adalah: *"Karakteristik pelanggan seperti masa berlangganan (tenure), jenis kontrak berlangganan, besaran biaya bulanan (MonthlyCharges), serta penggunaan fitur layanan tambahan (seperti TechSupport dan OnlineSecurity) memiliki hubungan yang signifikan dengan risiko probabilitas pelanggan mengalami churn."*
+Dataset *Telco Customer Churn* yang digunakan dalam penelitian ini diperoleh dari repositori resmi **IBM GitHub** (`IBM/telco-customer-churn-on-icp4d`). Repositori resmi IBM memuat lisensi **Apache Software License 2.0** (ditujukan untuk struktur repositori/code pattern, sementara lisensi berkas data sampel tidak dinyatakan secara terpisah dalam repositori) dan diunduh pada tanggal **7 Oktober 2026**. Dataset ini memuat **7.043 baris data pelanggan** industri telekomunikasi dengan **21 kolom atribut** (meliputi atribut demografis seperti `gender`, `SeniorCitizen`, `Partner`, `Dependents`; layanan berlangganan seperti `tenure`, `PhoneService`, `MultipleLines`, `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`; serta aspek finansial seperti `Contract`, `PaperlessBilling`, `PaymentMethod`, `MonthlyCharges`, dan `TotalCharges`) dengan **1 variabel target biner (`Churn`)** yang mengindikasikan apakah pelanggan berhenti berlangganan (Yes/No). Berdasarkan karakteristik dataset dan tahap identifikasi masalah penelitian, hipotesis awal yang dirumuskan adalah: *"Karakteristik pelanggan seperti masa berlangganan (tenure), jenis kontrak berlangganan, besaran biaya bulanan (MonthlyCharges), serta penggunaan fitur layanan tambahan (seperti TechSupport dan OnlineSecurity) berhubungan dengan kemungkinan pelanggan mengalami churn."*
 
 ---
 
@@ -25,14 +25,14 @@ Dataset *Telco Customer Churn* yang digunakan dalam penelitian ini diperoleh dar
 #### **A. Kata Kunci dan Strategi Penelusuran Boolean:**
 * **Tema Pilihan:** Prediksi Pelanggan Berhenti Berlangganan (*Customer Churn & Retention Analytics*)
 * **Query Boolean Utama:** `"customer churn" AND ("telecommunication" OR "telecom") AND ("machine learning" OR "data mining")`
-* **Filter Rentang Tahun:** 2022 – 2026 (5 Tahun Terakhir per Oktober 2026)
-* **Mesin Pencari Utama:** Google Scholar / ScienceDirect / Springer Link / IEEE Xplore / Nature Scientific Reports / PLOS ONE / Journal of Big Data
+* **Filter Rentang Tahun:** 2022 – 2026 (lima tahun publikasi terakhir yang digunakan dalam penelusuran)
+* **Mesin Pencari Utama:** Google Scholar / ScienceDirect / Springer Link / IEEE Xplore / Nature Scientific Reports / PLOS ONE / Decision Analytics Journal
 
 #### **B. Daftar 10 Artikel Ilmiah Terkumpul & Terverifikasi (Format APA 7th Edition):**
 
 1. **Lalwani, P., Mishra, M. K., Chadha, J. S., & Sethi, P. (2022).** Customer churn prediction system: A machine learning approach. *Computing*, 104(2), 271–294. https://doi.org/10.1007/s00607-021-00908-y
 2. **Geiler, L., Affeldt, S., & Nadif, M. (2022).** An effective strategy for churn prediction and customer profiling. *Data & Knowledge Engineering*, 142, 102100. https://doi.org/10.1016/j.datak.2022.102100
-3. **Mishra, A., & Reddy, U. S. (2022).** A novel approach for customer churn prediction using machine learning in telecom sector. *Journal of Big Data*, 9(1), 87. https://doi.org/10.1186/s40537-022-00637-x
+3. **De, S., & Pradhan, S. K. (2022).** Customer churn prediction in telecommunication industry using machine learning techniques. *Decision Analytics Journal*, 5, 100136. https://doi.org/10.1016/j.dajour.2022.100136
 4. **Sana, J. K., Abedin, M. Z., Rahman, M. S., & Rahman, M. S. (2022).** A novel customer churn prediction model for the telecommunication industry using data transformation methods and feature selection. *PLOS ONE*, 17(12), e0278095. https://doi.org/10.1371/journal.pone.0278095
 5. **Khattak, A., et al. (2023).** Customer churn prediction using composite deep learning technique. *Scientific Reports*, 13, 17294. https://doi.org/10.1038/s41598-023-44396-w
 6. **Prabadevi, B., Shalini, R., & Kavitha, B. R. (2023).** Customer churning analysis using machine learning algorithms. *International Journal of Intelligent Networks*, 4, 145–154. https://doi.org/10.1016/j.ijin.2023.05.005
@@ -63,7 +63,7 @@ Seluruh 10 artikel ilmiah di atas telah diekspor dan diverifikasi metadatanya da
 
 #### **B. Perumusan Celah Penelitian (*Focus Gap*) Spesifik & Teruji:**
 > **Rumusan Celah Penelitian:**  
-> *"Penelitian customer churn pada domain telekomunikasi (seperti Sana et al., 2022; Geiler et al., 2022; Prabadevi et al., 2023; Sagming et al., 2024; Poudel et al., 2024) sebagian besar berorientasi pada pembangunan dan evaluasi model prediksi pada tingkat pelanggan menggunakan metrik klasifikasi. **Oleh karena itu, masih terdapat ruang untuk memperdalam analisis hubungan antara karakteristik pelanggan dan layanan, seperti masa berlangganan (tenure), jenis kontrak, biaya bulanan, serta fitur layanan tambahan, dengan kecenderungan churn sebagai dasar pembentukan insight retensi yang lebih spesifik pada domain telekomunikasi.**"*
+> *"Sebagian besar penelitian customer churn pada domain telekomunikasi (seperti Sana et al., 2022; Geiler et al., 2022; Prabadevi et al., 2023; Sagming et al., 2024; Poudel et al., 2024) masih menempatkan prediksi churn pada tingkat pelanggan sebagai keluaran utama, dengan evaluasi yang berorientasi pada performa klasifikasi. Meskipun beberapa penelitian telah memasukkan profiling, interpretabilitas, dan retention, analisis yang secara sistematis menghubungkan kombinasi karakteristik pelanggan dan layanan untuk membentuk profil atau segmen pelanggan berdasarkan kecenderungan churn masih dapat dikembangkan lebih lanjut."*
 
 ---
 
